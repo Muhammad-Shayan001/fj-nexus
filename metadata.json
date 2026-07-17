@@ -1,0 +1,8 @@
+{
+  "name": "FJ NEXUS",
+  "description": "Premium enterprise software house delivering custom ERP systems, AI-driven automation, and scalable digital transformation solutions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

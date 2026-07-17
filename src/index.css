@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300..600;1,300..600&family=Manrope:wght@500;600;700;800&family=Poppins:wght@600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Manrope", "Poppins", sans-serif;
+  --font-mono: "ui-monospace", "SFMono-Regular", Menlo, Monaco, Consolas, monospace;
+}
+
+/* Custom Base Styles */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: #0A1F44;
+}
+
+/* Fine Utilities for Premium Designs */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #F9E79F 50%, #8A640F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-signature-gradient {
+  background: linear-gradient(135deg, #0A1F44 0%, #1E3A8A 45%, #2F80ED 75%, #00C2FF 100%);
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, #2F80ED 0%, #00C2FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-purple-cyan {
+  background: linear-gradient(135deg, #6C5CE7 0%, #00C2FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-dot-texture {
+  background-image: radial-gradient(#ffffff 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Custom Animation Classes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Metallic Gold Shimmer Keyframes and Utilities */
+@keyframes goldShimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.gold-shimmer-hover {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.gold-shimmer-hover::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 12%;
+  right: 12%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    #D4AF37 0%,
+    #F9E79F 25%,
+    #B38F1E 50%,
+    #F9E79F 75%,
+    #D4AF37 100%
+  );
+  background-size: 200% auto;
+  border-radius: 99px;
+  opacity: 0;
+  transform: scaleX(0);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gold-shimmer-hover:hover::after,
+.gold-shimmer-hover.active::after {
+  opacity: 1;
+  transform: scaleX(1);
+  animation: goldShimmer 2s infinite linear;
+}
+
+.gold-shimmer-text {
+  transition: color 0.3s ease;
+}
+
+.gold-shimmer-hover:hover .gold-shimmer-text,
+.gold-shimmer-hover.active .gold-shimmer-text {
+  background: linear-gradient(
+    120deg,
+    #FFFFFF 0%,
+    #FFFFFF 30%,
+    #F9E79F 50%,
+    #D4AF37 60%,
+    #F9E79F 70%,
+    #FFFFFF 80%,
+    #FFFFFF 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: goldShimmer 2.2s infinite linear;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B1120;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E3A8A;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2F80ED;
+}

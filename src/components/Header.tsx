@@ -57,7 +57,7 @@ export default function Header({ activeTab, setActiveTab, onOpenConsultation, on
             onClick={() => handleTabClick('home')}
             id="header-logo-container"
           >
-            <Logo variant="full-dark" className="h-9 w-auto" />
+            <Logo variant="full-dark" className="h-16 w-auto" />
           </div>
 
           {/* Desktop Nav Items */}

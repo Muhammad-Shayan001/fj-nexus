@@ -44,7 +44,7 @@ export default function Footer({ setActiveTab, onSelectService }: FooterProps) {
           
           {/* Logo & Intro Col */}
           <div className="lg:col-span-2 flex flex-col gap-6">
-            <Logo variant="full-dark" className="h-11 w-auto" />
+            <Logo variant="full-dark" className="h-16 w-auto" />
             <p className="font-sans text-sm text-[#C0C5CE]/80 leading-relaxed max-w-sm mt-3">
               Elite international software house shaping operational systems, digital transformations, custom ERP setups, and high-performance automated solutions for forward-thinking institutions.
             </p>

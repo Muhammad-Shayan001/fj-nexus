@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import AIConsultant from './components/AIConsultant';
 import ContactForm from './components/ContactForm';
 import ServiceDetail from './components/ServiceDetail';
 import Logo from './components/Logo';
@@ -97,13 +96,7 @@ export default function App() {
   return (
     <div className="bg-[#0A1F44] min-h-screen text-[#C0C5CE] flex flex-col font-sans antialiased">
       
-      {/* Top Banner announcing Live Consultant */}
-      <div className="bg-gradient-to-r from-[#1E3A8A] to-[#0A1F44] border-b border-[#C0C5CE]/10 text-center py-2 px-4 z-50 relative">
-        <span className="text-[10px] font-mono tracking-widest text-white uppercase inline-flex items-center gap-1.5 font-bold">
-          <Sparkles className="h-3 w-3 text-[#D4AF37] animate-pulse" />
-          Interactive System Blueprint: Try the AI Project Estimator in the contact section!
-        </span>
-      </div>
+
 
       {/* Primary Header */}
       <Header 
@@ -688,34 +681,6 @@ export default function App() {
             </section>
 
             {/* AI/Automation callout band */}
-            <section className="relative overflow-hidden py-20 bg-gradient-to-r from-[#6C5CE7] to-[#00C2FF] border-b border-[#C0C5CE]/10">
-              {/* Dot Texture */}
-              <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none"></div>
-              
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                <div className="lg:col-span-8 flex flex-col gap-4">
-                  <span className="text-[10px] font-mono text-white bg-white/20 px-3 py-1 rounded-full self-start font-extrabold tracking-widest uppercase">
-                    AI & WORKFLOW AUTOMATION SPOTLIGHT
-                  </span>
-                  <h2 className="font-heading font-extrabold text-2xl sm:text-3xl text-white tracking-tight leading-tight">
-                    Bring deep-learning automation to your daily operations.
-                  </h2>
-                  <p className="font-sans text-xs sm:text-sm text-white/90 leading-relaxed max-w-xl">
-                    Our AI Systems integrate Gemini models securely. We build automated data-extraction algorithms, multi-speaker customer service transcription networks, and automated routing pipelines that secure your corporate privacy.
-                  </p>
-                </div>
-                
-                <div className="lg:col-span-4 flex justify-end">
-                  <button
-                    onClick={triggerConsultation}
-                    className="px-6 py-4 bg-white text-[#0A1F44] font-sans font-bold text-xs tracking-wider uppercase rounded-lg transition-all duration-300 hover:scale-[1.03] shadow-2xl flex items-center gap-2"
-                  >
-                    <Terminal className="h-4 w-4" />
-                    Try AI Project Estimator
-                  </button>
-                </div>
-              </div>
-            </section>
 
             {/* Case Studies / Portfolio Preview */}
             <section className="py-20 sm:py-28 bg-[#0B1120] border-b border-[#C0C5CE]/10">
@@ -1425,24 +1390,6 @@ export default function App() {
 
             {/* Split layout Contact Form */}
             <ContactForm />
-
-            {/* Dynamic AI project estimator tool anchor spotlight! */}
-            <div className="mt-24 pt-12 border-t border-[#C0C5CE]/10">
-              <div className="flex flex-col items-center text-center gap-3 mb-12">
-                <span className="text-[10px] font-mono tracking-widest uppercase text-[#D4AF37] font-bold">
-                  TEST AN ACTIVE WORKFLOW DEMO
-                </span>
-                <h2 className="font-heading font-extrabold text-2xl sm:text-3xl text-white tracking-tight">
-                  Instant AI Architect Estimator
-                </h2>
-                <p className="font-sans text-xs sm:text-sm text-[#C0C5CE]/85 max-w-lg">
-                  Outline your requirements below. Our secure server-side Gemini AI engine will parse your specs and output a high-fidelity development proposal.
-                </p>
-              </div>
-
-              {/* Dynamic Gemini Tool */}
-              <AIConsultant />
-            </div>
           </div>
         )}
 

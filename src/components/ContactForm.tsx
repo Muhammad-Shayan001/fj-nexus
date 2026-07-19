@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Calendar, Clock, Loader2, Sparkles, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Calendar, Clock, Loader2, Sparkles, Send, CheckCircle2 } from 'lucide-react';
 
 export default function ContactForm() {
   const [name, setName] = useState('');
@@ -228,58 +228,66 @@ export default function ContactForm() {
         </div>
 
         {/* Interactive Calendly Schedule Simulator */}
-        <div className="bg-[#0A1F44]/30 border border-[#C0C5CE]/10 rounded-2xl p-6 shadow-xl relative overflow-hidden">
-          <div className="absolute top-0 right-0 p-3 opacity-15 pointer-events-none">
-            <Calendar className="h-16 w-16 text-[#D4AF37]" />
+        <div className="bg-[#0B1120] border border-[#D4AF37]/20 rounded-2xl p-6 shadow-2xl relative overflow-hidden group hover:border-[#D4AF37]/50 transition-all duration-500">
+          <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity duration-500 pointer-events-none transform group-hover:scale-110">
+            <Calendar className="h-20 w-20 text-[#D4AF37]" />
           </div>
 
-          <h4 className="font-sans font-extrabold text-sm text-white uppercase tracking-wide flex items-center gap-2">
-            <Clock className="h-4 w-4 text-[#D4AF37]" />
+          <h4 className="font-sans font-extrabold text-lg text-white uppercase tracking-wide flex items-center gap-2 mb-2">
+            <Clock className="h-5 w-5 text-[#D4AF37] animate-pulse" />
             Instant Calendar Booking
           </h4>
-          <p className="font-sans text-xs text-[#C0C5CE]/85 mt-1 leading-relaxed">
+          <p className="font-sans text-sm text-[#C0C5CE]/90 leading-relaxed mb-6">
             Lock in a 15-minute video call with Muhammad Shayan directly. Select your ideal date and timezone-aligned slot.
           </p>
 
-          <form onSubmit={handleCalendarSubmit} className="flex flex-col gap-3.5 mt-5">
-            <div className="grid grid-cols-2 gap-3">
-              <div className="flex flex-col gap-1">
-                <span className="text-[10px] text-[#C0C5CE]/70 font-sans uppercase">Date</span>
-                <input
-                  type="date"
-                  required
-                  min="2026-07-20"
-                  value={selectedDate}
-                  onChange={(e) => setSelectedDate(e.target.value)}
-                  className="bg-[#0B1120] border border-[#C0C5CE]/15 rounded-lg py-2 px-2 text-xs text-white focus:outline-none focus:border-[#D4AF37]"
-                />
+          <form onSubmit={handleCalendarSubmit} className="flex flex-col gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div className="flex flex-col gap-2">
+                <label className="text-[11px] text-[#C0C5CE]/80 font-sans uppercase font-bold tracking-wider">Select Date</label>
+                <div className="relative">
+                  <input
+                    type="date"
+                    required
+                    min={new Date().toISOString().split('T')[0]}
+                    value={selectedDate}
+                    onChange={(e) => setSelectedDate(e.target.value)}
+                    className="w-full bg-[#0A1F44]/50 border border-[#C0C5CE]/20 rounded-xl py-3 px-4 text-sm text-white focus:outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] transition-all cursor-pointer hover:bg-[#0A1F44]/80"
+                  />
+                </div>
               </div>
 
-              <div className="flex flex-col gap-1">
-                <span className="text-[10px] text-[#C0C5CE]/70 font-sans uppercase">Time Slot</span>
-                <select
-                  value={selectedTime}
-                  onChange={(e) => setSelectedTime(e.target.value)}
-                  className="bg-[#0B1120] border border-[#C0C5CE]/15 rounded-lg py-2 px-2 text-xs text-white focus:outline-none focus:border-[#D4AF37]"
-                >
-                  <option value="09:00">09:00 AM BST</option>
-                  <option value="11:30">11:30 AM BST</option>
-                  <option value="14:00">02:00 PM BST</option>
-                  <option value="16:00">04:00 PM BST</option>
-                  <option value="18:30">06:30 PM BST</option>
-                </select>
+              <div className="flex flex-col gap-2">
+                <label className="text-[11px] text-[#C0C5CE]/80 font-sans uppercase font-bold tracking-wider">Select Time Slot</label>
+                <div className="relative">
+                  <select
+                    value={selectedTime}
+                    onChange={(e) => setSelectedTime(e.target.value)}
+                    className="w-full bg-[#0A1F44]/50 border border-[#C0C5CE]/20 rounded-xl py-3 px-4 text-sm text-white focus:outline-none focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] transition-all cursor-pointer hover:bg-[#0A1F44]/80 appearance-none"
+                  >
+                    <option value="09:00">09:00 AM BST</option>
+                    <option value="11:30">11:30 AM BST</option>
+                    <option value="14:00">02:00 PM BST</option>
+                    <option value="16:00">04:00 PM BST</option>
+                    <option value="18:30">06:30 PM BST</option>
+                  </select>
+                  <div className="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none">
+                    <Clock className="w-4 h-4 text-[#D4AF37]/70" />
+                  </div>
+                </div>
               </div>
             </div>
 
             <button
               type="submit"
-              className="w-full py-2.5 px-4 bg-transparent hover:bg-[#D4AF37] text-[#D4AF37] hover:text-[#0A1F44] border border-[#D4AF37] font-sans font-bold text-[11px] tracking-wider uppercase rounded-lg transition-all duration-300 flex items-center justify-center gap-1.5 cursor-pointer"
+              className="mt-2 w-full py-3.5 px-6 bg-gradient-to-r from-[#D4AF37] to-[#B38F1E] hover:from-[#F9E79F] hover:to-[#D4AF37] text-[#0A1F44] font-sans font-black text-xs tracking-widest uppercase rounded-xl transition-all duration-300 transform hover:scale-[1.02] shadow-[0_0_20px_rgba(212,175,55,0.2)] hover:shadow-[0_0_30px_rgba(212,175,55,0.4)] flex items-center justify-center gap-2 cursor-pointer"
             >
               Confirm Video Scoping Session
             </button>
 
             {calendarSuccess && (
-              <div className="bg-green-500/10 border border-green-500/20 text-green-400 p-3.5 rounded-lg text-[11px] leading-relaxed font-sans">
+              <div className="bg-green-500/10 border border-green-500/30 text-green-400 p-4 rounded-xl text-xs leading-relaxed font-sans flex items-center gap-2 animate-fade-in">
+                <CheckCircle2 className="w-4 h-4 flex-shrink-0" />
                 {calendarSuccess}
               </div>
             )}

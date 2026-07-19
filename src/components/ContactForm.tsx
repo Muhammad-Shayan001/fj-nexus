@@ -129,9 +129,9 @@ export default function ContactForm() {
               onChange={(e) => setBudget(e.target.value)}
               className="bg-[#0B1120] border border-[#C0C5CE]/20 rounded-lg py-2.5 px-2 text-xs text-white focus:outline-none focus:border-[#D4AF37]"
             >
-              <option value="starter">Starter Pilot ($5,000 - $15,000)</option>
-              <option value="growth">Accelerated Expansion ($15,000 - $40,000)</option>
-              <option value="enterprise">Corporate Enterprise ($40,000+)</option>
+              <option value="starter">Starter Pilot (PKR 1.5M - 4.5M)</option>
+              <option value="growth">Accelerated Expansion (PKR 4.5M - 12M)</option>
+              <option value="enterprise">Corporate Enterprise (PKR 12M+)</option>
               <option value="not-sure">Undetermined Scopes</option>
             </select>
           </div>

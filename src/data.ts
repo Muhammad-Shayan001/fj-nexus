@@ -38,7 +38,7 @@ export const SERVICES: Service[] = [
     ],
     process: ['Wireframing & UX Research', 'Frontend Styling & State Design', 'API Integration', 'End-to-End Testing', 'Global CDN Deployment'],
     techStack: ['React', 'Next.js', 'Vite', 'Tailwind CSS', 'GraphQL'],
-    pricing: 'Starting at $15,000',
+    pricing: 'Starting at PKR 4.5M',
     faq: [
       { question: 'Is the website optimized for mobile devices?', answer: 'Yes, every layout is designed responsive-first to render flawlessly on mobile, tablet, and desktop.' }
     ]
@@ -58,7 +58,7 @@ export const SERVICES: Service[] = [
     ],
     process: ['Mobile UX Mapping', 'UI Design Sprints', 'Native/Cross-Platform Coding', 'Device Lab Testing', 'App Store Submission'],
     techStack: ['React Native', 'Flutter', 'Swift', 'Kotlin', 'Firebase'],
-    pricing: 'Starting at $20,000',
+    pricing: 'Starting at PKR 6M',
     faq: [
       { question: 'Which platforms do you target?', answer: 'We target both iOS and Android simultaneously, using native languages or cross-platform frameworks depending on project needs.' }
     ]
@@ -120,7 +120,7 @@ export const SERVICES: Service[] = [
     ],
     process: ['Hardware Profiling', 'Database Replication Setup', 'Interface Customization', 'On-Site Setup', 'SLA Support'],
     techStack: ['Electron', 'React', 'SQLite', 'Node.js', 'Tailwind CSS'],
-    pricing: 'Starting at $5,000 per branch',
+    pricing: 'Starting at PKR 1.5M per branch',
     faq: [
       { question: 'What hardware is supported?', answer: 'Our POS is compatible with standard Windows, Android, macOS, and iPad terminals, along with standard receipt printers.' }
     ]
@@ -140,7 +140,7 @@ export const SERVICES: Service[] = [
     ],
     process: ['Sales Flow Diagnostics', 'CRM Architecture Design', 'Third-Party Integration', 'Team Training', 'Launch & Iterate'],
     techStack: ['Node.js', 'React', 'PostgreSQL', 'Twilio', 'SendGrid'],
-    pricing: 'Starting at $12,000',
+    pricing: 'Starting at PKR 3.5M',
     faq: [
       { question: 'Can we integrate it with our current email server?', answer: 'Yes, our CRM supports direct integration with G Suite, Office 365, IMAP, and SMTP servers.' }
     ]
@@ -162,7 +162,7 @@ export const SERVICES: Service[] = [
     ],
     process: ['User Persona Audits', 'Low-Fi Wireframing', 'High-Fi Interface Design', 'Interactive Prototyping', 'Developer Handoff'],
     techStack: ['Figma', 'Adobe Creative Suite', 'Canva', 'Spline 3D'],
-    pricing: 'Starting at $7,500',
+    pricing: 'Starting at PKR 2.2M',
     faq: [
       { question: 'Do you deliver assets ready for coding?', answer: 'Yes, we provide fully structured Figma files with centralized variables, components, and exportable high-res assets.' }
     ]
@@ -206,7 +206,7 @@ export const SERVICES: Service[] = [
     ],
     process: ['System Penetration Probe', 'Vulnerability Inventory', 'Remediation Sprints', 'Automated Patch Setup', 'Compliance Certification'],
     techStack: ['Kali Linux', 'Wireshark', 'Wazuh', 'Docker Security', 'Cloudflare WAF'],
-    pricing: 'Starting at $10,000 / Audit',
+    pricing: 'Starting at PKR 3M / Audit',
     faq: [
       { question: 'How often should we audit our systems?', answer: 'For high-exposure enterprises like hospitals or e-commerce, we recommend biannual deep-penetration scans and automated daily security checks.' }
     ]
@@ -277,7 +277,7 @@ export const PROJECTS: Project[] = [
     results: [
       'Consolidated patient files into a single master profile',
       'Reduced average checkout and billing wait time by 55%',
-      'Eliminated billing leaks, saving $120,000 in the first quarter'
+      'Eliminated billing leaks, saving PKR 36M in the first quarter'
     ],
     testimonial: {
       quote: 'FJ NEXUS transformed our medical administrative chaos into an elegant, reliable workflow. Our medical staff can now focus purely on saving lives.',
@@ -389,7 +389,7 @@ export const JOBS: JobRole[] = [
     id: 'job-1',
     title: 'Senior Full-Stack TypeScript Engineer',
     department: 'Software Engineering',
-    location: 'Remote (Global) / London Office',
+    location: 'Remote (Global) / Islamabad Office',
     type: 'Full-time',
     experience: '5+ years',
     description: 'We are seeking an expert developer to engineer premium, responsive web frontends and cloud-native backends utilizing React, Next.js, and Node.js. You will lead client modules and orchestrate high-performance API structures.',
@@ -404,7 +404,7 @@ export const JOBS: JobRole[] = [
     id: 'job-2',
     title: 'AI Prompt & Integration Engineer',
     department: 'Artificial Intelligence',
-    location: 'London Office / Hybrid',
+    location: 'Islamabad Office / Hybrid',
     type: 'Full-time',
     experience: '3+ years',
     description: 'Join our automation department to build next-generation smart agents. You will orchestrate LLM routing, configure vector database retrieval (RAG), and program secure backend interfaces connecting enterprise tools.',

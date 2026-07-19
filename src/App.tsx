@@ -618,7 +618,7 @@ export default function App() {
                     { title: 'Enterprise Security', desc: 'Compliant with OWASP top standards, full AES database encryption, and optional on-premise hardware deployments.' },
                     { title: 'Scalable Architecture', desc: 'No-bottleneck servers utilizing microservices and Kubernetes, designed to double throughput seamlessly on peak sales cycles.' },
                     { title: 'Dedicated Support', desc: 'Bespoke maintenance SLAs. Access direct developer support channels via dedicated Telegram, Slack, or hotlines.' },
-                    { title: 'Global Delivery', desc: 'Experienced digital consultants bridging international timelines across London, Dubai, Islamabad, and Singapore.' }
+                    { title: 'Global Delivery', desc: 'Experienced digital consultants bridging international timelines across Karachi, Lahore, Islamabad, and Dubai.' }
                   ].map((feat, i) => (
                     <div key={i} className="flex flex-col gap-3 bg-[#0A1F44]/40 border border-[#C0C5CE]/5 p-6 rounded-xl hover:border-[#D4AF37]/30 transition-all">
                       <div className="bg-[#D4AF37]/10 w-9 h-9 rounded-lg flex items-center justify-center">
@@ -1167,7 +1167,7 @@ export default function App() {
                 <div className="flex flex-col gap-4">
                   <span className="text-[10px] font-mono text-[#C0C5CE]/60 uppercase tracking-widest">STARTER PILOT</span>
                   <div className="flex items-baseline gap-1">
-                    <span className="font-heading font-black text-3xl sm:text-4xl text-white">$12,500</span>
+                    <span className="font-heading font-black text-3xl sm:text-4xl text-white">PKR 3.75M</span>
                     <span className="text-xs text-[#C0C5CE]/60">Flat One-Time</span>
                   </div>
                   <p className="font-sans text-xs text-[#C0C5CE]/85 leading-relaxed mt-1">
@@ -1200,7 +1200,7 @@ export default function App() {
                 <div className="flex flex-col gap-4">
                   <span className="text-[10px] font-mono text-[#D4AF37] uppercase tracking-widest font-bold">ACCELERATED EXPANSION</span>
                   <div className="flex items-baseline gap-1">
-                    <span className="font-heading font-black text-3xl sm:text-4xl text-white">$32,000</span>
+                    <span className="font-heading font-black text-3xl sm:text-4xl text-white">PKR 9.6M</span>
                     <span className="text-xs text-[#C0C5CE]/60">Flat One-Time</span>
                   </div>
                   <p className="font-sans text-xs text-[#C0C5CE]/85 leading-relaxed mt-1">
